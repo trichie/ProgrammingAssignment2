@@ -46,7 +46,12 @@ cacheSolve <- function(x) {
 # Small test case
 mat <- matrix(nrow=2,c(1,3,2,4))
 testMat <- makeMatrix(mat)
+# calculating inverse
 invMat <- cacheinv(testMat)
 invMat
+# getting cached matrix as cacheinv has run before
+invMat <- cacheinv(testMat)
+invMat
+
 # returns 2x2 unit matrix ;-)
 round(mat %*% invMat,15)
