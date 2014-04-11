@@ -48,7 +48,5 @@ mat <- matrix(nrow=2,c(1,3,2,4))
 testMat <- makeMatrix(mat)
 invMat <- cacheinv(testMat)
 invMat
+# returns 2x2 unit matrix ;-)
 round(mat %*% invMat,15)
-makeCacheMatrix <- function(x = matrix()) {
-
-}
